@@ -6,6 +6,17 @@ $cor-secundaria: rgb(231, 116, 9);
     padding: 0;
 }
 
+@mixin cor-e-texto {
+    width: 50%;
+    background-color: $cor-principal;
+    .texto {
+        margin-top: 40%;
+        text-align: center;
+        font-size: 150px;
+        color: $cor-secundaria;
+    }
+}
+
 body {
     @include reset();
 }
