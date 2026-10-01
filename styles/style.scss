@@ -6,14 +6,14 @@ $cor-secundaria: rgb(231, 116, 9);
     padding: 0;
 }
 
-@mixin cor-e-texto {
+@mixin cor-e-texto($cor-de-fundo, $cor-do-texto) {
     width: 50%;
-    background-color: $cor-principal;
+    background-color: $cor-de-fundo;
     .texto {
         margin-top: 40%;
         text-align: center;
         font-size: 150px;
-        color: $cor-secundaria;
+        color: $cor-do-texto;
     }
 }
 
@@ -25,9 +25,9 @@ body {
     height: 100vh;
     display: flex;
     .esquerdo {
-        @include cor-e-texto();
+        @include cor-e-texto($cor-principal, $cor-secundaria);
     }
     .direito {
-        @include cor-e-texto();
+        @include cor-e-texto($cor-secundaria, $cor-principal);
     }
 }
