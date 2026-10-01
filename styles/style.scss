@@ -1,9 +1,13 @@
 $cor-principal: rgb(190, 151, 226);
 $cor-secundaria: rgb(231, 116, 9);
 
-body {
+@mixin reset {
     margin: 0;
     padding: 0;
+}
+
+body {
+    @include reset();
 }
 
 .container {
