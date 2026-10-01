@@ -28,13 +28,6 @@ body {
         @include cor-e-texto();
     }
     .direito {
-        width: 50%;
-        background-color: $cor-secundaria;
-        .texto {
-            margin-top: 40%;
-            text-align: center;
-            font-size: 150px;
-            color: $cor-principal;
-        }
+        @include cor-e-texto();
     }
 }
